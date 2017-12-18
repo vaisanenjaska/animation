@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "eslint-plugin-import": "^2.8.0",
     "material-ui": "^0.20.0",
     "proptypes": "^1.1.0",
     "react": "^16.2.0",
