@@ -1,0 +1,41 @@
+{
+  "Jumanji: Welcome to the Jungle": {
+    "director": "Jake Kasdan",
+    "starring": [
+      "Dwayne Johnson",
+      "Jack Black",
+      "Kevin Hart",
+      "Karen Gillan",
+      "Nick Jonas"
+    ],
+    "duration": "1h 52m",
+    "description":
+      "In a brand new Jumanji adventure, four high school kids discover an old video game console and are drawn into the game's jungle setting, literally becoming the adult avatars they chose. What they discover is that you don't just play Jumanji - you must survive it.",
+    "genres": ["comedy", "action", "adventure", "fantasy"],
+    "premiere": "22.12.2017"
+  },
+  "The Journey": {
+    "director": "Nick Hamm",
+    "starring": [
+      "Timothy Spall",
+      "Colm Meaney",
+      "Freddie Highmore",
+      "John Hurt",
+      "Toby Stephens"
+    ],
+    "duration": "1h 35m",
+    "description":
+      "In 2006, Northern Ireland's bloody Troubles had dragged on for decades.",
+    "genres": ["drama"],
+    "premiere": "22.12.2017"
+  },
+  "Suburbicon": {
+    "director": "George Clooney",
+    "starring": ["Matt Damon", "Julianne Moore", "Oscar Isaac", "Noah Jupe"],
+    "duration": "1h 45m",
+    "description":
+      "In the bosom of Suburbicon, a family-centred, all-white utopia of manicured lawns and friendly locals, a simmering tension is brewing, as the first African-American family moves in the idyllic community, in the hot summer of 1959. However, as the patriarch Gardner Lodge and his family start catching a few disturbing glimpses of the once welcoming neighbourhood's dark underbelly, acts of unprecedented violence paired with a gruesome death will inevitably blemish Suburbicon's picture-perfect facade.",
+    "genres": ["comedy", "drama", "thriller"],
+    "premiere": "22.12.2017"
+  }
+}

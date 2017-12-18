@@ -1,0 +1,331 @@
+p,
+div,
+button,
+select {
+  font-family: "Nobile", Helvetica, Arial, sans-serif;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-transition {
+  transition: opacity 0.5s ease-out;
+  opacity: 0;
+}
+
+.App-button {
+  flex: 1 1 auto;
+  background-color: lightgray;
+  margin: 10px;
+  padding: 20px;
+  border: 2px solid #222;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s;
+  width: 20%;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1), 0px 10px 20px rgba(0, 0, 0, 0.05),
+    0px 20px 20px rgba(0, 0, 0, 0.05), 0px 30px 20px rgba(0, 0, 0, 0.05);
+}
+
+.App-button:after {
+  position: absolute;
+  transition: 0.3s;
+  content: "";
+  width: 0;
+  left: 50%;
+  bottom: 0;
+  height: 3px;
+  background: #222;
+}
+
+.App-button:hover {
+  cursor: pointer;
+}
+
+.App-button:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.App-container {
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 3em;
+  color: orange;
+}
+
+.Booking-button {
+  flex: 1 1 auto;
+  background-color: rgb(255, 62, 72);
+  color: #f4f4f4;
+  margin: 10px;
+  padding: 20px;
+  border: 2px solid #222;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s;
+  width: 10%;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1), 0px 10px 20px rgba(0, 0, 0, 0.05),
+    0px 20px 20px rgba(0, 0, 0, 0.05), 0px 30px 20px rgba(0, 0, 0, 0.05);
+}
+
+.Booking-button:after {
+  position: absolute;
+  transition: 0.3s;
+  content: "";
+  width: 0;
+  left: 100%;
+  bottom: 0;
+  height: 3px;
+  background: #222;
+}
+
+.Booking-button:hover {
+  cursor: pointer;
+}
+
+.Booking-button:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.Booking-div {
+  margin-top: 5%;
+}
+
+.Booking-optgroup {
+  font-size: 16px;
+  animation-name: booking-select-click-animation;
+  animation-duration: 0.3s;
+}
+
+.Booking-paper {
+  width: 33%;
+  height: 300px;
+  display: inline-block;
+}
+
+.Booking-select {
+  font-size: 1em;
+  background: #fff;
+  border-color: rgba(0, 0, 0, 0.12);
+  border-width: 0 1px 1px 1px;
+  color: rgba(0, 0, 0, 0.73);
+  display: inline-block;
+  height: 2em;
+  margin: 0 5px 0 5px;
+  padding: 2px 0 1px 16px;
+  position: relative;
+  text-align: center;
+  text-shadow: none;
+  width: 33%;
+  z-index: 1;
+  outline: none;
+  overflow: hidden;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1), 0px 10px 20px rgba(0, 0, 0, 0.05),
+    0px 20px 20px rgba(0, 0, 0, 0.05), 0px 30px 20px rgba(0, 0, 0, 0.05);
+}
+
+@keyframes booking-select-animation {
+  from {
+    background: #fff;
+  }
+  to {
+    background: #f4f4f4;
+  }
+}
+
+.Booking-select:hover {
+  cursor: pointer;
+  background: #f4f4f4;
+  animation-name: booking-select-animation;
+  animation-duration: 0.3s;
+}
+
+.Booking-table {
+  margin: 25px auto;
+  border-collapse: collapse;
+  border: 1px solid #eee;
+  border-bottom: 2px solid #becc00;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1), 0px 10px 20px rgba(0, 0, 0, 0.05),
+    0px 20px 20px rgba(0, 0, 0, 0.05), 0px 30px 20px rgba(0, 0, 0, 0.05);
+}
+
+.Booking-table tr:hover {
+  background-color: lightgray;
+}
+
+.Booking-table td:hover {
+  cursor: pointer;
+}
+
+@keyframes booking-table-animation {
+  from {
+    background-color: #f4f4f4;
+  }
+  to {
+    background-color: lightgray;
+  }
+}
+
+.Booking-table tr:hover td {
+  animation-name: booking-table-animation;
+  animation-duration: 0.3s;
+}
+
+.Booking-table th,
+.Booking-table td {
+  color: #999;
+  border: 1px solid #eee;
+  padding: 12px 35px;
+  border-collapse: collapse;
+}
+
+.Booking-table th {
+  background: #becc00;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.Booking-table th.last {
+  border-right: none;
+}
+
+.Movies-paper {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1), 0px 10px 20px rgba(0, 0, 0, 0.05),
+    0px 20px 20px rgba(0, 0, 0, 0.05), 0px 30px 20px rgba(0, 0, 0, 0.05);
+}
+
+.Seats-button {
+  flex: 1 1 auto;
+  background-color: rgb(62, 152, 255);
+  color: #f4f4f4;
+  margin: 10px;
+  padding: 20px;
+  border: 2px solid #222;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s;
+  width: 10%;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1), 0px 10px 20px rgba(0, 0, 0, 0.05),
+    0px 20px 20px rgba(0, 0, 0, 0.05), 0px 30px 20px rgba(0, 0, 0, 0.05);
+}
+
+.Seats-button:after {
+  position: absolute;
+  transition: 0.3s;
+  content: "";
+  width: 0;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  background: #222;
+}
+
+.Seats-button:hover {
+  cursor: pointer;
+}
+
+.Seats-button:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.Seats-free {
+  background-color: #26ff72;
+  width: 2em;
+  height: 2em;
+}
+
+@keyframes seats-free-animation {
+  from {
+    background-color: #26ff72;
+  }
+  to {
+    background-color: green;
+  }
+}
+
+.Seats-free:hover {
+  cursor: pointer;
+  background-color: green;
+  animation-name: seats-free-animation;
+  animation-duration: 0.3s;
+}
+
+@keyframes seats-p-animation {
+  from {
+    color: #fff;
+  }
+  to {
+    color: initial;
+  }
+}
+
+.Seats-p {
+  animation-name: seats-p-animation;
+  animation-duration: 0.5s;
+}
+
+.Seats-paper {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  display: inline-block;
+  width: 10%;
+  height: 3em;
+}
+
+.Seats-taken {
+  background-color: #f41d3a;
+  width: 2em;
+  height: 2em;
+}
+
+.Seats-tentative {
+  background-color: rgb(241, 237, 0);
+  width: 2em;
+  height: 2em;
+}
+
+@keyframes seats-tentative-animation {
+  from {
+    background-color: rgb(241, 237, 0);
+  }
+  to {
+    background-color: orange;
+  }
+}
+
+.Seats-tentative:hover {
+  cursor: pointer;
+  background-color: orange;
+  animation-name: seats-tentative-animation;
+  animation-duration: 0.3s;
+}
