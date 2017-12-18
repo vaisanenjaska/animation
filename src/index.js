@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
-import registerServiceWorker from "./registerServiceWorker";
 import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
 import { IntlProvider, addLocaleData } from "react-intl";
 import fi from "react-intl/locale-data/fi";
@@ -16,4 +15,3 @@ ReactDOM.render(
   </IntlProvider>,
   document.getElementById("root")
 );
-registerServiceWorker();
